@@ -1,7 +1,12 @@
 import requests
 import time
-from bs4 import BeautifulSoup
-from utils import YEARS, REGIONS, ROUNDS, BASE_URL, get_bracket_url
+import csv
+from bs4 import BeautifulSoup 
+from utils import (
+    YEARS, REGIONS, ROUNDS, BASE_URL, 
+    get_bracket_url, print_matchup
+)
+
 
 matchup_history = []
 
@@ -16,12 +21,11 @@ for year in YEARS:
         bracket = soup.find("div", {"id": region.lower()})
 
         rounds = bracket.find_all("div", {"class": "round"})[:-1] # Remove last round, which is just the region winner
-
         bracket_rounds = ROUNDS[:-2] if region != "National" else ROUNDS[-2:]
         for round, round_name in zip(rounds, bracket_rounds):
             print(f"--- Scraping {round_name} Round ---")
+
             matchups = round.find_all("div")
-            
             for matchup in matchups:
                 teams = matchup.find_all("div")
                 if len(teams) != 2: continue
@@ -36,8 +40,10 @@ for year in YEARS:
                 team_b_link = BASE_URL + teams[1].find("a")["href"]
 
                 winner = 0 if "winner" in teams[0].get("class", []) else 1
-                print(f"Scraped ({team_a_seed}) {team_a} - ({team_b_seed}) {team_b} | Winner: {winner}")
+
+                print_matchup(team_a, team_b, team_a_seed, team_b_seed, winner)
                 matchup_history.append({
+                    "year": year,
                     "region": region,
                     "round": round_name,
                     "team_a": team_a,
@@ -46,7 +52,11 @@ for year in YEARS:
                     "team_b_seed": team_b_seed,
                     "team_a_link": team_a_link,
                     "team_b_link": team_b_link,
-                    "winner": winner,
+                    "winner": winner, # 0 if Team A wins, 1 if Team B wins
                 })
 
-print(matchup_history)
+
+with open("data/matchups.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=matchup_history[0].keys())
+    writer.writeheader()
+    writer.writerows(matchup_history)
