@@ -1,5 +1,4 @@
 import requests
-import time
 import csv
 from bs4 import BeautifulSoup 
 from utils import (
@@ -13,12 +12,12 @@ matchup_history = []
 for year in YEARS:
     print(f"--- Scraping {year} Season ---")
     bracket_url = get_bracket_url(year)
-    response = requests.get(bracket_url)
-    soup = BeautifulSoup(response.content, "lxml")
+    res = requests.get(bracket_url)
+    soup = BeautifulSoup(res.content, "lxml")
 
     for region in REGIONS:
         print(f"--- Scraping {region} Region ---")
-        bracket = soup.find("div", {"id": region.lower()})
+        bracket = soup.find("div", {"id": region.lower()}) # Region id is lowercase
 
         rounds = bracket.find_all("div", {"class": "round"})[:-1] # Remove last round, which is just the region winner
         bracket_rounds = ROUNDS[:-2] if region != "National" else ROUNDS[-2:]
