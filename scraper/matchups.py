@@ -35,9 +35,6 @@ for year in YEARS:
                 team_a_seed = int(teams[0].find("span").text.strip())
                 team_b_seed = int(teams[1].find("span").text.strip())
 
-                team_a_link = BASE_URL + teams[0].find("a")["href"]
-                team_b_link = BASE_URL + teams[1].find("a")["href"]
-
                 winner = 0 if "winner" in teams[0].get("class", []) else 1
 
                 print_matchup(team_a, team_b, team_a_seed, team_b_seed, winner)
@@ -49,8 +46,6 @@ for year in YEARS:
                     "team_b": team_b,
                     "team_a_seed": team_a_seed,
                     "team_b_seed": team_b_seed,
-                    "team_a_link": team_a_link,
-                    "team_b_link": team_b_link,
                     "winner": winner, # 0 if Team A wins, 1 if Team B wins
                 })
 

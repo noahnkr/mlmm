@@ -1,6 +1,6 @@
 BASE_URL = "https://www.sports-reference.com"
 
-YEARS = [ 2023, 2024 ]
+YEARS = [ 2023, ]
 
 REGIONS = [ "East", "Midwest", "South", "West", "National" ]
 
@@ -48,6 +48,9 @@ UNDERLINE_END = "\033[0m"
 
 def get_bracket_url(year):
     return f"{BASE_URL}/cbb/postseason/men/{year}-ncaa.html"
+
+def get_season_stats_url(year, basic_stats):
+    return f"{BASE_URL}/cbb/seasons/men/{year}-{"" if basic_stats else "advanced-"}school-stats.html"
 
 def print_matchup(team_a, team_b, team_a_seed, team_b_seed, winner):
    print(f"({team_a_seed}) {UNDERLINE_START if winner == 0 else ""}{team_a}{UNDERLINE_END if winner == 0 else ""} - ({team_b_seed}) {UNDERLINE_START if winner == 1 else ""}{team_b}{UNDERLINE_END if winner == 1 else ""}")
