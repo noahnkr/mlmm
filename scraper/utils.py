@@ -1,6 +1,6 @@
 BASE_URL = "https://www.sports-reference.com"
 
-YEARS = [ 2023, ]
+YEARS = [ 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025 ]
 
 REGIONS = [ "East", "Midwest", "South", "West", "National" ]
 
@@ -43,6 +43,10 @@ ADVANCED_TEAM_STATS = {
    "TOV%": "tov_pct",
    "ORB%": "orb_pct",
    "FT/FGA": "ft_rate",
+}
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122.0.0.0 Safari/537.36"
 }
 
 UNDERLINE_START = "\033[4m"
