@@ -1,0 +1,820 @@
+year,region,round,team_a,team_b,team_a_seed,team_b_seed,winner
+2012,East,First,Syracuse,UNC Asheville,1,16,0
+2012,East,First,Kansas State,Southern Miss,8,9,0
+2012,East,First,Vanderbilt,Harvard,5,12,0
+2012,East,First,Wisconsin,Montana,4,13,0
+2012,East,First,Cincinnati,Texas,6,11,0
+2012,East,First,Florida State,St. Bonaventure,3,14,0
+2012,East,First,Gonzaga,West Virginia,7,10,0
+2012,East,First,Ohio State,Loyola (MD),2,15,0
+2012,East,Second,Syracuse,Kansas State,1,8,0
+2012,East,Second,Vanderbilt,Wisconsin,5,4,1
+2012,East,Second,Cincinnati,Florida State,6,3,0
+2012,East,Second,Gonzaga,Ohio State,7,2,1
+2012,East,Sweet 16,Syracuse,Wisconsin,1,4,0
+2012,East,Sweet 16,Cincinnati,Ohio State,6,2,1
+2012,East,Elite 8,Syracuse,Ohio State,1,2,1
+2012,Midwest,First,UNC,Vermont,1,16,0
+2012,Midwest,First,Creighton,Alabama,8,9,0
+2012,Midwest,First,Temple,South Florida,5,12,1
+2012,Midwest,First,Michigan,Ohio,4,13,1
+2012,Midwest,First,San Diego State,NC State,6,11,1
+2012,Midwest,First,Georgetown,Belmont,3,14,0
+2012,Midwest,First,Saint Mary's,Purdue,7,10,1
+2012,Midwest,First,Kansas,Detroit Mercy,2,15,0
+2012,Midwest,Second,UNC,Creighton,1,8,0
+2012,Midwest,Second,South Florida,Ohio,12,13,1
+2012,Midwest,Second,NC State,Georgetown,11,3,0
+2012,Midwest,Second,Purdue,Kansas,10,2,1
+2012,Midwest,Sweet 16,UNC,Ohio,1,13,0
+2012,Midwest,Sweet 16,NC State,Kansas,11,2,1
+2012,Midwest,Elite 8,UNC,Kansas,1,2,1
+2012,South,First,Kentucky,Western Kentucky,1,16,0
+2012,South,First,Iowa State,UConn,8,9,0
+2012,South,First,Wichita State,VCU,5,12,1
+2012,South,First,Indiana,New Mexico State,4,13,0
+2012,South,First,UNLV,Colorado,6,11,1
+2012,South,First,Baylor,South Dakota State,3,14,0
+2012,South,First,Notre Dame,Xavier,7,10,1
+2012,South,First,Duke,Lehigh,2,15,1
+2012,South,Second,Kentucky,Iowa State,1,8,0
+2012,South,Second,VCU,Indiana,12,4,1
+2012,South,Second,Colorado,Baylor,11,3,1
+2012,South,Second,Xavier,Lehigh,10,15,0
+2012,South,Sweet 16,Kentucky,Indiana,1,4,0
+2012,South,Sweet 16,Baylor,Xavier,3,10,0
+2012,South,Elite 8,Kentucky,Baylor,1,3,0
+2012,West,First,Michigan State,LIU,1,16,0
+2012,West,First,Memphis,Saint Louis,8,9,1
+2012,West,First,New Mexico,Long Beach State,5,12,0
+2012,West,First,Louisville,Davidson,4,13,0
+2012,West,First,Murray State,Colorado State,6,11,0
+2012,West,First,Marquette,BYU,3,14,0
+2012,West,First,Florida,Virginia,7,10,0
+2012,West,First,Missouri,Norfolk State,2,15,1
+2012,West,Second,Michigan State,Saint Louis,1,9,0
+2012,West,Second,New Mexico,Louisville,5,4,1
+2012,West,Second,Murray State,Marquette,6,3,1
+2012,West,Second,Florida,Norfolk State,7,15,0
+2012,West,Sweet 16,Michigan State,Louisville,1,4,1
+2012,West,Sweet 16,Marquette,Florida,3,7,1
+2012,West,Elite 8,Louisville,Florida,4,7,0
+2012,National,Final 4,Kentucky,Louisville,1,4,0
+2012,National,Final 4,Ohio State,Kansas,2,2,1
+2012,National,National Championship,Kentucky,Kansas,1,2,0
+2013,East,First,Indiana,James Madison,1,16,0
+2013,East,First,NC State,Temple,8,9,1
+2013,East,First,UNLV,California,5,12,1
+2013,East,First,Syracuse,Montana,4,13,0
+2013,East,First,Butler,Bucknell,6,11,0
+2013,East,First,Marquette,Davidson,3,14,0
+2013,East,First,Illinois,Colorado,7,10,0
+2013,East,First,Miami (FL),Pacific,2,15,0
+2013,East,Second,Indiana,Temple,1,9,0
+2013,East,Second,California,Syracuse,12,4,1
+2013,East,Second,Butler,Marquette,6,3,1
+2013,East,Second,Illinois,Miami (FL),7,2,1
+2013,East,Sweet 16,Indiana,Syracuse,1,4,1
+2013,East,Sweet 16,Marquette,Miami (FL),3,2,0
+2013,East,Elite 8,Syracuse,Marquette,4,3,0
+2013,Midwest,First,Louisville,North Carolina A&T,1,16,0
+2013,Midwest,First,Colorado State,Missouri,8,9,0
+2013,Midwest,First,Oklahoma State,Oregon,5,12,1
+2013,Midwest,First,Saint Louis,New Mexico State,4,13,0
+2013,Midwest,First,Memphis,Saint Mary's,6,11,0
+2013,Midwest,First,Michigan State,Valparaiso,3,14,0
+2013,Midwest,First,Creighton,Cincinnati,7,10,0
+2013,Midwest,First,Duke,Albany (NY),2,15,0
+2013,Midwest,Second,Louisville,Colorado State,1,8,0
+2013,Midwest,Second,Oregon,Saint Louis,12,4,0
+2013,Midwest,Second,Memphis,Michigan State,6,3,1
+2013,Midwest,Second,Creighton,Duke,7,2,1
+2013,Midwest,Sweet 16,Louisville,Oregon,1,12,0
+2013,Midwest,Sweet 16,Michigan State,Duke,3,2,1
+2013,Midwest,Elite 8,Louisville,Duke,1,2,0
+2013,South,First,Kansas,Western Kentucky,1,16,0
+2013,South,First,UNC,Villanova,8,9,0
+2013,South,First,VCU,Akron,5,12,0
+2013,South,First,Michigan,South Dakota State,4,13,0
+2013,South,First,UCLA,Minnesota,6,11,1
+2013,South,First,Florida,Northwestern State,3,14,0
+2013,South,First,San Diego State,Oklahoma,7,10,0
+2013,South,First,Georgetown,Florida Gulf Coast,2,15,1
+2013,South,Second,Kansas,UNC,1,8,0
+2013,South,Second,VCU,Michigan,5,4,1
+2013,South,Second,Minnesota,Florida,11,3,1
+2013,South,Second,San Diego State,Florida Gulf Coast,7,15,1
+2013,South,Sweet 16,Kansas,Michigan,1,4,1
+2013,South,Sweet 16,Florida,Florida Gulf Coast,3,15,0
+2013,South,Elite 8,Michigan,Florida,4,3,0
+2013,West,First,Gonzaga,Southern,1,16,0
+2013,West,First,Pitt,Wichita State,8,9,1
+2013,West,First,Wisconsin,Ole Miss,5,12,1
+2013,West,First,Kansas State,La Salle,4,13,1
+2013,West,First,Arizona,Belmont,6,11,0
+2013,West,First,New Mexico,Harvard,3,14,1
+2013,West,First,Notre Dame,Iowa State,7,10,1
+2013,West,First,Ohio State,Iona,2,15,0
+2013,West,Second,Gonzaga,Wichita State,1,9,1
+2013,West,Second,Ole Miss,La Salle,12,13,1
+2013,West,Second,Arizona,Harvard,6,14,0
+2013,West,Second,Iowa State,Ohio State,10,2,1
+2013,West,Sweet 16,Wichita State,La Salle,9,13,0
+2013,West,Sweet 16,Arizona,Ohio State,6,2,1
+2013,West,Elite 8,Wichita State,Ohio State,9,2,0
+2013,National,Final 4,Louisville,Wichita State,1,9,0
+2013,National,Final 4,Syracuse,Michigan,4,4,1
+2013,National,National Championship,Louisville,Michigan,1,4,0
+2014,East,First,Virginia,Coastal Carolina,1,16,0
+2014,East,First,Memphis,George Washington,8,9,0
+2014,East,First,Cincinnati,Harvard,5,12,1
+2014,East,First,Michigan State,Delaware,4,13,0
+2014,East,First,UNC,Providence,6,11,0
+2014,East,First,Iowa State,North Carolina Central,3,14,0
+2014,East,First,UConn,St. Joseph's,7,10,0
+2014,East,First,Villanova,Milwaukee,2,15,0
+2014,East,Second,Virginia,Memphis,1,8,0
+2014,East,Second,Harvard,Michigan State,12,4,1
+2014,East,Second,UNC,Iowa State,6,3,1
+2014,East,Second,UConn,Villanova,7,2,0
+2014,East,Sweet 16,Virginia,Michigan State,1,4,1
+2014,East,Sweet 16,Iowa State,UConn,3,7,1
+2014,East,Elite 8,Michigan State,UConn,4,7,1
+2014,Midwest,First,Wichita State,Cal Poly,1,16,0
+2014,Midwest,First,Kentucky,Kansas State,8,9,0
+2014,Midwest,First,Saint Louis,NC State,5,12,0
+2014,Midwest,First,Louisville,Manhattan,4,13,0
+2014,Midwest,First,UMass,Tennessee,6,11,1
+2014,Midwest,First,Duke,Mercer,3,14,1
+2014,Midwest,First,Texas,Arizona State,7,10,0
+2014,Midwest,First,Michigan,Wofford,2,15,0
+2014,Midwest,Second,Wichita State,Kentucky,1,8,1
+2014,Midwest,Second,Saint Louis,Louisville,5,4,1
+2014,Midwest,Second,Tennessee,Mercer,11,14,0
+2014,Midwest,Second,Texas,Michigan,7,2,1
+2014,Midwest,Sweet 16,Kentucky,Louisville,8,4,0
+2014,Midwest,Sweet 16,Tennessee,Michigan,11,2,1
+2014,Midwest,Elite 8,Kentucky,Michigan,8,2,0
+2014,South,First,Florida,Albany (NY),1,16,0
+2014,South,First,Colorado,Pitt,8,9,1
+2014,South,First,VCU,Stephen F. Austin,5,12,1
+2014,South,First,UCLA,Tulsa,4,13,0
+2014,South,First,Ohio State,Dayton,6,11,1
+2014,South,First,Syracuse,Western Michigan,3,14,0
+2014,South,First,New Mexico,Stanford,7,10,1
+2014,South,First,Kansas,Eastern Kentucky,2,15,0
+2014,South,Second,Florida,Pitt,1,9,0
+2014,South,Second,Stephen F. Austin,UCLA,12,4,1
+2014,South,Second,Dayton,Syracuse,11,3,0
+2014,South,Second,Stanford,Kansas,10,2,0
+2014,South,Sweet 16,Florida,UCLA,1,4,0
+2014,South,Sweet 16,Dayton,Stanford,11,10,0
+2014,South,Elite 8,Florida,Dayton,1,11,0
+2014,West,First,Arizona,Weber State,1,16,0
+2014,West,First,Gonzaga,Oklahoma State,8,9,0
+2014,West,First,Oklahoma,North Dakota State,5,12,1
+2014,West,First,San Diego State,New Mexico State,4,13,0
+2014,West,First,Baylor,Nebraska,6,11,0
+2014,West,First,Creighton,Louisiana,3,14,0
+2014,West,First,Oregon,BYU,7,10,0
+2014,West,First,Wisconsin,American,2,15,0
+2014,West,Second,Arizona,Gonzaga,1,8,0
+2014,West,Second,North Dakota State,San Diego State,12,4,1
+2014,West,Second,Baylor,Creighton,6,3,0
+2014,West,Second,Oregon,Wisconsin,7,2,1
+2014,West,Sweet 16,Arizona,San Diego State,1,4,0
+2014,West,Sweet 16,Baylor,Wisconsin,6,2,1
+2014,West,Elite 8,Arizona,Wisconsin,1,2,1
+2014,National,Final 4,UConn,Florida,7,1,0
+2014,National,Final 4,Wisconsin,Kentucky,2,8,1
+2014,National,National Championship,UConn,Kentucky,7,8,0
+2015,East,First,Villanova,Lafayette,1,16,0
+2015,East,First,NC State,LSU,8,9,0
+2015,East,First,Northern Iowa,Wyoming,5,12,0
+2015,East,First,Louisville,UC-Irvine,4,13,0
+2015,East,First,Providence,Dayton,6,11,1
+2015,East,First,Oklahoma,Albany (NY),3,14,0
+2015,East,First,Michigan State,Georgia,7,10,0
+2015,East,First,Virginia,Belmont,2,15,0
+2015,East,Second,Villanova,NC State,1,8,1
+2015,East,Second,Northern Iowa,Louisville,5,4,1
+2015,East,Second,Dayton,Oklahoma,11,3,1
+2015,East,Second,Michigan State,Virginia,7,2,0
+2015,East,Sweet 16,NC State,Louisville,8,4,1
+2015,East,Sweet 16,Oklahoma,Michigan State,3,7,1
+2015,East,Elite 8,Louisville,Michigan State,4,7,1
+2015,Midwest,First,Kentucky,Hampton,1,16,0
+2015,Midwest,First,Cincinnati,Purdue,8,9,0
+2015,Midwest,First,West Virginia,Buffalo,5,12,0
+2015,Midwest,First,Maryland,Valparaiso,4,13,0
+2015,Midwest,First,Butler,Texas,6,11,0
+2015,Midwest,First,Notre Dame,Northeastern,3,14,0
+2015,Midwest,First,Wichita State,Indiana,7,10,0
+2015,Midwest,First,Kansas,New Mexico State,2,15,0
+2015,Midwest,Second,Kentucky,Cincinnati,1,8,0
+2015,Midwest,Second,West Virginia,Maryland,5,4,0
+2015,Midwest,Second,Butler,Notre Dame,6,3,1
+2015,Midwest,Second,Wichita State,Kansas,7,2,0
+2015,Midwest,Sweet 16,Kentucky,West Virginia,1,5,0
+2015,Midwest,Sweet 16,Notre Dame,Wichita State,3,7,0
+2015,Midwest,Elite 8,Kentucky,Notre Dame,1,3,0
+2015,South,First,Duke,Robert Morris,1,16,0
+2015,South,First,San Diego State,St. John's (NY),8,9,0
+2015,South,First,Utah,Stephen F. Austin,5,12,0
+2015,South,First,Georgetown,Eastern Washington,4,13,0
+2015,South,First,SMU,UCLA,6,11,1
+2015,South,First,Iowa State,UAB,3,14,1
+2015,South,First,Iowa,Davidson,7,10,0
+2015,South,First,Gonzaga,North Dakota State,2,15,0
+2015,South,Second,Duke,San Diego State,1,8,0
+2015,South,Second,Utah,Georgetown,5,4,0
+2015,South,Second,UCLA,UAB,11,14,0
+2015,South,Second,Iowa,Gonzaga,7,2,1
+2015,South,Sweet 16,Duke,Utah,1,5,0
+2015,South,Sweet 16,UCLA,Gonzaga,11,2,1
+2015,South,Elite 8,Duke,Gonzaga,1,2,0
+2015,West,First,Wisconsin,Coastal Carolina,1,16,0
+2015,West,First,Oregon,Oklahoma State,8,9,0
+2015,West,First,Arkansas,Wofford,5,12,0
+2015,West,First,UNC,Harvard,4,13,0
+2015,West,First,Xavier,Ole Miss,6,11,0
+2015,West,First,Baylor,Georgia State,3,14,1
+2015,West,First,VCU,Ohio State,7,10,1
+2015,West,First,Arizona,Texas Southern,2,15,0
+2015,West,Second,Wisconsin,Oregon,1,8,0
+2015,West,Second,Arkansas,UNC,5,4,1
+2015,West,Second,Xavier,Georgia State,6,14,0
+2015,West,Second,Ohio State,Arizona,10,2,1
+2015,West,Sweet 16,Wisconsin,UNC,1,4,0
+2015,West,Sweet 16,Xavier,Arizona,6,2,1
+2015,West,Elite 8,Wisconsin,Arizona,1,2,0
+2015,National,Final 4,Duke,Michigan State,1,7,0
+2015,National,Final 4,Kentucky,Wisconsin,1,1,1
+2015,National,National Championship,Duke,Wisconsin,1,1,0
+2016,East,First,UNC,Florida Gulf Coast,1,16,0
+2016,East,First,USC,Providence,8,9,1
+2016,East,First,Indiana,Chattanooga,5,12,0
+2016,East,First,Kentucky,Stony Brook,4,13,0
+2016,East,First,Notre Dame,Michigan,6,11,0
+2016,East,First,West Virginia,Stephen F. Austin,3,14,1
+2016,East,First,Wisconsin,Pitt,7,10,0
+2016,East,First,Xavier,Weber State,2,15,0
+2016,East,Second,UNC,Providence,1,9,0
+2016,East,Second,Indiana,Kentucky,5,4,0
+2016,East,Second,Notre Dame,Stephen F. Austin,6,14,0
+2016,East,Second,Wisconsin,Xavier,7,2,0
+2016,East,Sweet 16,UNC,Indiana,1,5,0
+2016,East,Sweet 16,Notre Dame,Wisconsin,6,7,0
+2016,East,Elite 8,UNC,Notre Dame,1,6,0
+2016,Midwest,First,Virginia,Hampton,1,16,0
+2016,Midwest,First,Texas Tech,Butler,8,9,1
+2016,Midwest,First,Purdue,Little Rock,5,12,1
+2016,Midwest,First,Iowa State,Iona,4,13,0
+2016,Midwest,First,Seton Hall,Gonzaga,6,11,1
+2016,Midwest,First,Utah,Fresno State,3,14,0
+2016,Midwest,First,Dayton,Syracuse,7,10,1
+2016,Midwest,First,Michigan State,Middle Tennessee,2,15,1
+2016,Midwest,Second,Virginia,Butler,1,9,0
+2016,Midwest,Second,Little Rock,Iowa State,12,4,1
+2016,Midwest,Second,Gonzaga,Utah,11,3,0
+2016,Midwest,Second,Syracuse,Middle Tennessee,10,15,0
+2016,Midwest,Sweet 16,Virginia,Iowa State,1,4,0
+2016,Midwest,Sweet 16,Gonzaga,Syracuse,11,10,1
+2016,Midwest,Elite 8,Virginia,Syracuse,1,10,1
+2016,South,First,Kansas,Austin Peay,1,16,0
+2016,South,First,Colorado,UConn,8,9,1
+2016,South,First,Maryland,South Dakota State,5,12,0
+2016,South,First,California,Hawaii,4,13,1
+2016,South,First,Arizona,Wichita State,6,11,1
+2016,South,First,Miami (FL),Buffalo,3,14,0
+2016,South,First,Iowa,Temple,7,10,0
+2016,South,First,Villanova,UNC Asheville,2,15,0
+2016,South,Second,Kansas,UConn,1,9,0
+2016,South,Second,Maryland,Hawaii,5,13,0
+2016,South,Second,Wichita State,Miami (FL),11,3,1
+2016,South,Second,Iowa,Villanova,7,2,1
+2016,South,Sweet 16,Kansas,Maryland,1,5,0
+2016,South,Sweet 16,Miami (FL),Villanova,3,2,1
+2016,South,Elite 8,Kansas,Villanova,1,2,1
+2016,West,First,Oregon,Holy Cross,1,16,0
+2016,West,First,St. Joseph's,Cincinnati,8,9,0
+2016,West,First,Baylor,Yale,5,12,1
+2016,West,First,Duke,UNC Wilmington,4,13,0
+2016,West,First,Texas,Northern Iowa,6,11,1
+2016,West,First,Texas A&M,Green Bay,3,14,0
+2016,West,First,Oregon State,VCU,7,10,1
+2016,West,First,Oklahoma,Cal State Bakersfield,2,15,0
+2016,West,Second,Oregon,St. Joseph's,1,8,0
+2016,West,Second,Yale,Duke,12,4,1
+2016,West,Second,Northern Iowa,Texas A&M,11,3,1
+2016,West,Second,VCU,Oklahoma,10,2,1
+2016,West,Sweet 16,Oregon,Duke,1,4,0
+2016,West,Sweet 16,Texas A&M,Oklahoma,3,2,1
+2016,West,Elite 8,Oregon,Oklahoma,1,2,1
+2016,National,Final 4,Villanova,Oklahoma,2,2,0
+2016,National,Final 4,Syracuse,UNC,10,1,1
+2016,National,National Championship,Villanova,UNC,2,1,0
+2017,East,First,Villanova,Mount St. Mary's,1,16,0
+2017,East,First,Wisconsin,Virginia Tech,8,9,0
+2017,East,First,Virginia,UNC Wilmington,5,12,0
+2017,East,First,Florida,ETSU,4,13,0
+2017,East,First,SMU,USC,6,11,1
+2017,East,First,Baylor,New Mexico State,3,14,0
+2017,East,First,South Carolina,Marquette,7,10,0
+2017,East,First,Duke,Troy,2,15,0
+2017,East,Second,Villanova,Wisconsin,1,8,1
+2017,East,Second,Virginia,Florida,5,4,1
+2017,East,Second,USC,Baylor,11,3,1
+2017,East,Second,South Carolina,Duke,7,2,0
+2017,East,Sweet 16,Wisconsin,Florida,8,4,1
+2017,East,Sweet 16,Baylor,South Carolina,3,7,1
+2017,East,Elite 8,Florida,South Carolina,4,7,1
+2017,Midwest,First,Kansas,UC-Davis,1,16,0
+2017,Midwest,First,Miami (FL),Michigan State,8,9,1
+2017,Midwest,First,Iowa State,Nevada,5,12,0
+2017,Midwest,First,Purdue,Vermont,4,13,0
+2017,Midwest,First,Creighton,Rhode Island,6,11,1
+2017,Midwest,First,Oregon,Iona,3,14,0
+2017,Midwest,First,Michigan,Oklahoma State,7,10,0
+2017,Midwest,First,Louisville,Jacksonville State,2,15,0
+2017,Midwest,Second,Kansas,Michigan State,1,9,0
+2017,Midwest,Second,Iowa State,Purdue,5,4,1
+2017,Midwest,Second,Rhode Island,Oregon,11,3,1
+2017,Midwest,Second,Michigan,Louisville,7,2,0
+2017,Midwest,Sweet 16,Kansas,Purdue,1,4,0
+2017,Midwest,Sweet 16,Oregon,Michigan,3,7,0
+2017,Midwest,Elite 8,Kansas,Oregon,1,3,1
+2017,South,First,UNC,Texas Southern,1,16,0
+2017,South,First,Arkansas,Seton Hall,8,9,0
+2017,South,First,Minnesota,Middle Tennessee,5,12,1
+2017,South,First,Butler,Winthrop,4,13,0
+2017,South,First,Cincinnati,Kansas State,6,11,0
+2017,South,First,UCLA,Kent State,3,14,0
+2017,South,First,Dayton,Wichita State,7,10,1
+2017,South,First,Kentucky,Northern Kentucky,2,15,0
+2017,South,Second,UNC,Arkansas,1,8,0
+2017,South,Second,Middle Tennessee,Butler,12,4,1
+2017,South,Second,Cincinnati,UCLA,6,3,1
+2017,South,Second,Wichita State,Kentucky,10,2,1
+2017,South,Sweet 16,UNC,Butler,1,4,0
+2017,South,Sweet 16,UCLA,Kentucky,3,2,1
+2017,South,Elite 8,UNC,Kentucky,1,2,0
+2017,West,First,Gonzaga,South Dakota State,1,16,0
+2017,West,First,Northwestern,Vanderbilt,8,9,0
+2017,West,First,Notre Dame,Princeton,5,12,0
+2017,West,First,West Virginia,Bucknell,4,13,0
+2017,West,First,Maryland,Xavier,6,11,1
+2017,West,First,Florida State,Florida Gulf Coast,3,14,0
+2017,West,First,Saint Mary's,VCU,7,10,0
+2017,West,First,Arizona,North Dakota,2,15,0
+2017,West,Second,Gonzaga,Northwestern,1,8,0
+2017,West,Second,Notre Dame,West Virginia,5,4,1
+2017,West,Second,Xavier,Florida State,11,3,0
+2017,West,Second,Saint Mary's,Arizona,7,2,1
+2017,West,Sweet 16,Gonzaga,West Virginia,1,4,0
+2017,West,Sweet 16,Xavier,Arizona,11,2,0
+2017,West,Elite 8,Gonzaga,Xavier,1,11,0
+2017,National,Final 4,Oregon,UNC,3,1,1
+2017,National,Final 4,South Carolina,Gonzaga,7,1,1
+2017,National,National Championship,UNC,Gonzaga,1,1,0
+2018,East,First,Villanova,Radford,1,16,0
+2018,East,First,Virginia Tech,Alabama,8,9,1
+2018,East,First,West Virginia,Murray State,5,12,0
+2018,East,First,Wichita State,Marshall,4,13,1
+2018,East,First,Florida,St. Bonaventure,6,11,0
+2018,East,First,Texas Tech,Stephen F. Austin,3,14,0
+2018,East,First,Arkansas,Butler,7,10,1
+2018,East,First,Purdue,Cal State Fullerton,2,15,0
+2018,East,Second,Villanova,Alabama,1,9,0
+2018,East,Second,West Virginia,Marshall,5,13,0
+2018,East,Second,Florida,Texas Tech,6,3,1
+2018,East,Second,Butler,Purdue,10,2,1
+2018,East,Sweet 16,Villanova,West Virginia,1,5,0
+2018,East,Sweet 16,Texas Tech,Purdue,3,2,0
+2018,East,Elite 8,Villanova,Texas Tech,1,3,0
+2018,Midwest,First,Kansas,Penn,1,16,0
+2018,Midwest,First,Seton Hall,NC State,8,9,0
+2018,Midwest,First,Clemson,New Mexico State,5,12,0
+2018,Midwest,First,Auburn,College of Charleston,4,13,0
+2018,Midwest,First,TCU,Syracuse,6,11,1
+2018,Midwest,First,Michigan State,Bucknell,3,14,0
+2018,Midwest,First,Rhode Island,Oklahoma,7,10,0
+2018,Midwest,First,Duke,Iona,2,15,0
+2018,Midwest,Second,Kansas,Seton Hall,1,8,0
+2018,Midwest,Second,Clemson,Auburn,5,4,0
+2018,Midwest,Second,Syracuse,Michigan State,11,3,0
+2018,Midwest,Second,Rhode Island,Duke,7,2,1
+2018,Midwest,Sweet 16,Kansas,Clemson,1,5,0
+2018,Midwest,Sweet 16,Syracuse,Duke,11,2,1
+2018,Midwest,Elite 8,Kansas,Duke,1,2,0
+2018,South,First,Virginia,UMBC,1,16,1
+2018,South,First,Creighton,Kansas State,8,9,1
+2018,South,First,Kentucky,Davidson,5,12,0
+2018,South,First,Arizona,Buffalo,4,13,1
+2018,South,First,Miami (FL),Loyola (IL),6,11,1
+2018,South,First,Tennessee,Wright State,3,14,0
+2018,South,First,Nevada,Texas,7,10,0
+2018,South,First,Cincinnati,Georgia State,2,15,0
+2018,South,Second,UMBC,Kansas State,16,9,1
+2018,South,Second,Kentucky,Buffalo,5,13,0
+2018,South,Second,Loyola (IL),Tennessee,11,3,0
+2018,South,Second,Nevada,Cincinnati,7,2,0
+2018,South,Sweet 16,Kansas State,Kentucky,9,5,0
+2018,South,Sweet 16,Loyola (IL),Nevada,11,7,0
+2018,South,Elite 8,Kansas State,Loyola (IL),9,11,1
+2018,West,First,Xavier,Texas Southern,1,16,0
+2018,West,First,Missouri,Florida State,8,9,1
+2018,West,First,Ohio State,South Dakota State,5,12,0
+2018,West,First,Gonzaga,UNC Greensboro,4,13,0
+2018,West,First,Houston,San Diego State,6,11,0
+2018,West,First,Michigan,Montana,3,14,0
+2018,West,First,Texas A&M,Providence,7,10,0
+2018,West,First,UNC,Lipscomb,2,15,0
+2018,West,Second,Xavier,Florida State,1,9,1
+2018,West,Second,Ohio State,Gonzaga,5,4,1
+2018,West,Second,Houston,Michigan,6,3,1
+2018,West,Second,Texas A&M,UNC,7,2,0
+2018,West,Sweet 16,Florida State,Gonzaga,9,4,0
+2018,West,Sweet 16,Michigan,Texas A&M,3,7,0
+2018,West,Elite 8,Florida State,Michigan,9,3,1
+2018,National,Final 4,Villanova,Kansas,1,1,0
+2018,National,Final 4,Loyola (IL),Michigan,11,3,1
+2018,National,National Championship,Villanova,Michigan,1,3,0
+2019,East,First,Duke,North Dakota State,1,16,0
+2019,East,First,VCU,UCF,8,9,1
+2019,East,First,Mississippi State,Liberty,5,12,1
+2019,East,First,Virginia Tech,Saint Louis,4,13,0
+2019,East,First,Maryland,Belmont,6,11,0
+2019,East,First,LSU,Yale,3,14,0
+2019,East,First,Louisville,Minnesota,7,10,1
+2019,East,First,Michigan State,Bradley,2,15,0
+2019,East,Second,Duke,UCF,1,9,0
+2019,East,Second,Liberty,Virginia Tech,12,4,1
+2019,East,Second,Maryland,LSU,6,3,1
+2019,East,Second,Minnesota,Michigan State,10,2,1
+2019,East,Sweet 16,Duke,Virginia Tech,1,4,0
+2019,East,Sweet 16,LSU,Michigan State,3,2,1
+2019,East,Elite 8,Duke,Michigan State,1,2,1
+2019,Midwest,First,UNC,Iona,1,16,0
+2019,Midwest,First,Utah State,Washington,8,9,1
+2019,Midwest,First,Auburn,New Mexico State,5,12,0
+2019,Midwest,First,Kansas,Northeastern,4,13,0
+2019,Midwest,First,Iowa State,Ohio State,6,11,1
+2019,Midwest,First,Houston,Georgia State,3,14,0
+2019,Midwest,First,Wofford,Seton Hall,7,10,0
+2019,Midwest,First,Kentucky,Abilene Christian,2,15,0
+2019,Midwest,Second,UNC,Washington,1,9,0
+2019,Midwest,Second,Auburn,Kansas,5,4,0
+2019,Midwest,Second,Ohio State,Houston,11,3,1
+2019,Midwest,Second,Wofford,Kentucky,7,2,1
+2019,Midwest,Sweet 16,UNC,Auburn,1,5,1
+2019,Midwest,Sweet 16,Houston,Kentucky,3,2,1
+2019,Midwest,Elite 8,Auburn,Kentucky,5,2,0
+2019,South,First,Virginia,Gardner-Webb,1,16,0
+2019,South,First,Ole Miss,Oklahoma,8,9,1
+2019,South,First,Wisconsin,Oregon,5,12,1
+2019,South,First,Kansas State,UC-Irvine,4,13,1
+2019,South,First,Villanova,Saint Mary's,6,11,0
+2019,South,First,Purdue,Old Dominion,3,14,0
+2019,South,First,Cincinnati,Iowa,7,10,1
+2019,South,First,Tennessee,Colgate,2,15,0
+2019,South,Second,Virginia,Oklahoma,1,9,0
+2019,South,Second,Oregon,UC-Irvine,12,13,0
+2019,South,Second,Villanova,Purdue,6,3,1
+2019,South,Second,Iowa,Tennessee,10,2,1
+2019,South,Sweet 16,Virginia,Oregon,1,12,0
+2019,South,Sweet 16,Purdue,Tennessee,3,2,0
+2019,South,Elite 8,Virginia,Purdue,1,3,0
+2019,West,First,Gonzaga,FDU,1,16,0
+2019,West,First,Syracuse,Baylor,8,9,1
+2019,West,First,Marquette,Murray State,5,12,1
+2019,West,First,Florida State,Vermont,4,13,0
+2019,West,First,Buffalo,Arizona State,6,11,0
+2019,West,First,Texas Tech,Northern Kentucky,3,14,0
+2019,West,First,Nevada,Florida,7,10,1
+2019,West,First,Michigan,Montana,2,15,0
+2019,West,Second,Gonzaga,Baylor,1,9,0
+2019,West,Second,Murray State,Florida State,12,4,1
+2019,West,Second,Buffalo,Texas Tech,6,3,1
+2019,West,Second,Florida,Michigan,10,2,1
+2019,West,Sweet 16,Gonzaga,Florida State,1,4,0
+2019,West,Sweet 16,Texas Tech,Michigan,3,2,0
+2019,West,Elite 8,Gonzaga,Texas Tech,1,3,1
+2019,National,Final 4,Virginia,Auburn,1,5,0
+2019,National,Final 4,Texas Tech,Michigan State,3,2,0
+2019,National,National Championship,Virginia,Texas Tech,1,3,0
+2021,East,First,Michigan,Texas Southern,1,16,0
+2021,East,First,LSU,St. Bonaventure,8,9,0
+2021,East,First,Colorado,Georgetown,5,12,0
+2021,East,First,Florida State,UNC Greensboro,4,13,0
+2021,East,First,BYU,UCLA,6,11,1
+2021,East,First,Texas,Abilene Christian,3,14,1
+2021,East,First,UConn,Maryland,7,10,1
+2021,East,First,Alabama,Iona,2,15,0
+2021,East,Second,Michigan,LSU,1,8,0
+2021,East,Second,Colorado,Florida State,5,4,1
+2021,East,Second,UCLA,Abilene Christian,11,14,0
+2021,East,Second,Maryland,Alabama,10,2,1
+2021,East,Sweet 16,Michigan,Florida State,1,4,0
+2021,East,Sweet 16,UCLA,Alabama,11,2,0
+2021,East,Elite 8,Michigan,UCLA,1,11,1
+2021,Midwest,First,Illinois,Drexel,1,16,0
+2021,Midwest,First,Loyola (IL),Georgia Tech,8,9,0
+2021,Midwest,First,Tennessee,Oregon State,5,12,1
+2021,Midwest,First,Oklahoma State,Liberty,4,13,0
+2021,Midwest,First,San Diego State,Syracuse,6,11,1
+2021,Midwest,First,West Virginia,Morehead State,3,14,0
+2021,Midwest,First,Clemson,Rutgers,7,10,1
+2021,Midwest,First,Houston,Cleveland State,2,15,0
+2021,Midwest,Second,Illinois,Loyola (IL),1,8,1
+2021,Midwest,Second,Oregon State,Oklahoma State,12,4,0
+2021,Midwest,Second,Syracuse,West Virginia,11,3,0
+2021,Midwest,Second,Rutgers,Houston,10,2,1
+2021,Midwest,Sweet 16,Loyola (IL),Oregon State,8,12,1
+2021,Midwest,Sweet 16,Syracuse,Houston,11,2,1
+2021,Midwest,Elite 8,Oregon State,Houston,12,2,1
+2021,South,First,Baylor,Hartford,1,16,0
+2021,South,First,UNC,Wisconsin,8,9,1
+2021,South,First,Villanova,Winthrop,5,12,0
+2021,South,First,Purdue,North Texas,4,13,1
+2021,South,First,Texas Tech,Utah State,6,11,0
+2021,South,First,Arkansas,Colgate,3,14,0
+2021,South,First,Florida,Virginia Tech,7,10,0
+2021,South,First,Ohio State,Oral Roberts,2,15,1
+2021,South,Second,Baylor,Wisconsin,1,9,0
+2021,South,Second,Villanova,North Texas,5,13,0
+2021,South,Second,Texas Tech,Arkansas,6,3,1
+2021,South,Second,Florida,Oral Roberts,7,15,1
+2021,South,Sweet 16,Baylor,Villanova,1,5,0
+2021,South,Sweet 16,Arkansas,Oral Roberts,3,15,0
+2021,South,Elite 8,Baylor,Arkansas,1,3,0
+2021,West,First,Gonzaga,Norfolk State,1,16,0
+2021,West,First,Oklahoma,Missouri,8,9,0
+2021,West,First,Creighton,UCSB,5,12,0
+2021,West,First,Virginia,Ohio,4,13,1
+2021,West,First,USC,Drake,6,11,0
+2021,West,First,Kansas,Eastern Washington,3,14,0
+2021,West,First,Oregon,VCU,7,10,1
+2021,West,First,Iowa,Grand Canyon,2,15,0
+2021,West,Second,Gonzaga,Oklahoma,1,8,0
+2021,West,Second,Creighton,Ohio,5,13,0
+2021,West,Second,USC,Kansas,6,3,0
+2021,West,Second,Oregon,Iowa,7,2,0
+2021,West,Sweet 16,Gonzaga,Creighton,1,5,0
+2021,West,Sweet 16,USC,Oregon,6,7,0
+2021,West,Elite 8,Gonzaga,USC,1,6,0
+2021,National,Final 4,Baylor,Houston,1,2,0
+2021,National,Final 4,Gonzaga,UCLA,1,11,0
+2021,National,National Championship,Baylor,Gonzaga,1,1,0
+2022,East,First,Baylor,Norfolk State,1,16,0
+2022,East,First,UNC,Marquette,8,9,0
+2022,East,First,Saint Mary's,Indiana,5,12,0
+2022,East,First,UCLA,Akron,4,13,0
+2022,East,First,Texas,Virginia Tech,6,11,0
+2022,East,First,Purdue,Yale,3,14,0
+2022,East,First,Murray State,San Francisco,7,10,0
+2022,East,First,Kentucky,St. Peter's,2,15,1
+2022,East,Second,Baylor,UNC,1,8,1
+2022,East,Second,Saint Mary's,UCLA,5,4,1
+2022,East,Second,Texas,Purdue,6,3,1
+2022,East,Second,Murray State,St. Peter's,7,15,1
+2022,East,Sweet 16,UNC,UCLA,8,4,0
+2022,East,Sweet 16,Purdue,St. Peter's,3,15,1
+2022,East,Elite 8,UNC,St. Peter's,8,15,0
+2022,Midwest,First,Kansas,Texas Southern,1,16,0
+2022,Midwest,First,San Diego State,Creighton,8,9,1
+2022,Midwest,First,Iowa,Richmond,5,12,1
+2022,Midwest,First,Providence,South Dakota State,4,13,0
+2022,Midwest,First,LSU,Iowa State,6,11,1
+2022,Midwest,First,Wisconsin,Colgate,3,14,0
+2022,Midwest,First,USC,Miami (FL),7,10,1
+2022,Midwest,First,Auburn,Jacksonville State,2,15,0
+2022,Midwest,Second,Kansas,Creighton,1,9,0
+2022,Midwest,Second,Richmond,Providence,12,4,1
+2022,Midwest,Second,Iowa State,Wisconsin,11,3,0
+2022,Midwest,Second,Miami (FL),Auburn,10,2,0
+2022,Midwest,Sweet 16,Kansas,Providence,1,4,0
+2022,Midwest,Sweet 16,Iowa State,Miami (FL),11,10,1
+2022,Midwest,Elite 8,Kansas,Miami (FL),1,10,0
+2022,South,First,Arizona,Wright State,1,16,0
+2022,South,First,Seton Hall,TCU,8,9,1
+2022,South,First,Houston,UAB,5,12,0
+2022,South,First,Illinois,Chattanooga,4,13,0
+2022,South,First,Colorado State,Michigan,6,11,1
+2022,South,First,Tennessee,Longwood,3,14,0
+2022,South,First,Ohio State,Loyola (IL),7,10,0
+2022,South,First,Villanova,Delaware,2,15,0
+2022,South,Second,Arizona,TCU,1,9,0
+2022,South,Second,Houston,Illinois,5,4,0
+2022,South,Second,Michigan,Tennessee,11,3,0
+2022,South,Second,Ohio State,Villanova,7,2,1
+2022,South,Sweet 16,Arizona,Houston,1,5,1
+2022,South,Sweet 16,Michigan,Villanova,11,2,1
+2022,South,Elite 8,Houston,Villanova,5,2,1
+2022,West,First,Gonzaga,Georgia State,1,16,0
+2022,West,First,Boise State,Memphis,8,9,1
+2022,West,First,UConn,New Mexico State,5,12,1
+2022,West,First,Arkansas,Vermont,4,13,0
+2022,West,First,Alabama,Notre Dame,6,11,1
+2022,West,First,Texas Tech,Montana State,3,14,0
+2022,West,First,Michigan State,Davidson,7,10,0
+2022,West,First,Duke,Cal State Fullerton,2,15,0
+2022,West,Second,Gonzaga,Memphis,1,9,0
+2022,West,Second,New Mexico State,Arkansas,12,4,1
+2022,West,Second,Notre Dame,Texas Tech,11,3,1
+2022,West,Second,Michigan State,Duke,7,2,1
+2022,West,Sweet 16,Gonzaga,Arkansas,1,4,1
+2022,West,Sweet 16,Texas Tech,Duke,3,2,1
+2022,West,Elite 8,Arkansas,Duke,4,2,1
+2022,National,Final 4,Villanova,Kansas,2,1,1
+2022,National,Final 4,Duke,UNC,2,8,1
+2022,National,National Championship,Kansas,UNC,1,8,0
+2023,East,First,Purdue,FDU,1,16,1
+2023,East,First,Memphis,Florida Atlantic,8,9,1
+2023,East,First,Duke,Oral Roberts,5,12,0
+2023,East,First,Tennessee,Louisiana,4,13,0
+2023,East,First,Kentucky,Providence,6,11,0
+2023,East,First,Kansas State,Montana State,3,14,0
+2023,East,First,Michigan State,USC,7,10,0
+2023,East,First,Marquette,Vermont,2,15,0
+2023,East,Second,FDU,Florida Atlantic,16,9,1
+2023,East,Second,Duke,Tennessee,5,4,1
+2023,East,Second,Kentucky,Kansas State,6,3,1
+2023,East,Second,Michigan State,Marquette,7,2,0
+2023,East,Sweet 16,Florida Atlantic,Tennessee,9,4,0
+2023,East,Sweet 16,Kansas State,Michigan State,3,7,0
+2023,East,Elite 8,Florida Atlantic,Kansas State,9,3,0
+2023,Midwest,First,Houston,Northern Kentucky,1,16,0
+2023,Midwest,First,Iowa,Auburn,8,9,1
+2023,Midwest,First,Miami (FL),Drake,5,12,0
+2023,Midwest,First,Indiana,Kent State,4,13,0
+2023,Midwest,First,Iowa State,Pitt,6,11,1
+2023,Midwest,First,Xavier,Kennesaw State,3,14,0
+2023,Midwest,First,Texas A&M,Penn State,7,10,1
+2023,Midwest,First,Texas,Colgate,2,15,0
+2023,Midwest,Second,Houston,Auburn,1,9,0
+2023,Midwest,Second,Miami (FL),Indiana,5,4,0
+2023,Midwest,Second,Pitt,Xavier,11,3,1
+2023,Midwest,Second,Penn State,Texas,10,2,1
+2023,Midwest,Sweet 16,Houston,Miami (FL),1,5,1
+2023,Midwest,Sweet 16,Xavier,Texas,3,2,1
+2023,Midwest,Elite 8,Miami (FL),Texas,5,2,0
+2023,South,First,Alabama,Texas A&M-Corpus Christi,1,16,0
+2023,South,First,Maryland,West Virginia,8,9,0
+2023,South,First,San Diego State,College of Charleston,5,12,0
+2023,South,First,Virginia,Furman,4,13,1
+2023,South,First,Creighton,NC State,6,11,0
+2023,South,First,Baylor,UCSB,3,14,0
+2023,South,First,Missouri,Utah State,7,10,0
+2023,South,First,Arizona,Princeton,2,15,1
+2023,South,Second,Alabama,Maryland,1,8,0
+2023,South,Second,San Diego State,Furman,5,13,0
+2023,South,Second,Creighton,Baylor,6,3,0
+2023,South,Second,Missouri,Princeton,7,15,1
+2023,South,Sweet 16,Alabama,San Diego State,1,5,1
+2023,South,Sweet 16,Creighton,Princeton,6,15,0
+2023,South,Elite 8,San Diego State,Creighton,5,6,0
+2023,West,First,Kansas,Howard,1,16,0
+2023,West,First,Arkansas,Illinois,8,9,0
+2023,West,First,Saint Mary's,VCU,5,12,0
+2023,West,First,UConn,Iona,4,13,0
+2023,West,First,TCU,Arizona State,6,11,0
+2023,West,First,Gonzaga,Grand Canyon,3,14,0
+2023,West,First,Northwestern,Boise State,7,10,0
+2023,West,First,UCLA,UNC Asheville,2,15,0
+2023,West,Second,Kansas,Arkansas,1,8,1
+2023,West,Second,Saint Mary's,UConn,5,4,1
+2023,West,Second,TCU,Gonzaga,6,3,1
+2023,West,Second,Northwestern,UCLA,7,2,1
+2023,West,Sweet 16,Arkansas,UConn,8,4,1
+2023,West,Sweet 16,Gonzaga,UCLA,3,2,0
+2023,West,Elite 8,UConn,Gonzaga,4,3,0
+2023,National,Final 4,Florida Atlantic,San Diego State,9,5,1
+2023,National,Final 4,Miami (FL),UConn,5,4,1
+2023,National,National Championship,San Diego State,UConn,5,4,1
+2024,East,First,UConn,Stetson,1,16,0
+2024,East,First,Florida Atlantic,Northwestern,8,9,1
+2024,East,First,San Diego State,UAB,5,12,0
+2024,East,First,Auburn,Yale,4,13,1
+2024,East,First,BYU,Duquesne,6,11,1
+2024,East,First,Illinois,Morehead State,3,14,0
+2024,East,First,Washington State,Drake,7,10,0
+2024,East,First,Iowa State,South Dakota State,2,15,0
+2024,East,Second,UConn,Northwestern,1,9,0
+2024,East,Second,San Diego State,Yale,5,13,0
+2024,East,Second,Duquesne,Illinois,11,3,1
+2024,East,Second,Washington State,Iowa State,7,2,1
+2024,East,Sweet 16,UConn,San Diego State,1,5,0
+2024,East,Sweet 16,Illinois,Iowa State,3,2,0
+2024,East,Elite 8,UConn,Illinois,1,3,0
+2024,Midwest,First,Purdue,Grambling,1,16,0
+2024,Midwest,First,Utah State,TCU,8,9,0
+2024,Midwest,First,Gonzaga,McNeese State,5,12,0
+2024,Midwest,First,Kansas,Samford,4,13,0
+2024,Midwest,First,South Carolina,Oregon,6,11,1
+2024,Midwest,First,Creighton,Akron,3,14,0
+2024,Midwest,First,Texas,Colorado State,7,10,0
+2024,Midwest,First,Tennessee,St. Peter's,2,15,0
+2024,Midwest,Second,Purdue,Utah State,1,8,0
+2024,Midwest,Second,Gonzaga,Kansas,5,4,0
+2024,Midwest,Second,Oregon,Creighton,11,3,1
+2024,Midwest,Second,Texas,Tennessee,7,2,1
+2024,Midwest,Sweet 16,Purdue,Gonzaga,1,5,0
+2024,Midwest,Sweet 16,Creighton,Tennessee,3,2,1
+2024,Midwest,Elite 8,Purdue,Tennessee,1,2,0
+2024,South,First,Houston,Longwood,1,16,0
+2024,South,First,Nebraska,Texas A&M,8,9,1
+2024,South,First,Wisconsin,James Madison,5,12,1
+2024,South,First,Duke,Vermont,4,13,0
+2024,South,First,Texas Tech,NC State,6,11,1
+2024,South,First,Kentucky,Oakland,3,14,1
+2024,South,First,Florida,Colorado,7,10,1
+2024,South,First,Marquette,Western Kentucky,2,15,0
+2024,South,Second,Houston,Texas A&M,1,9,0
+2024,South,Second,James Madison,Duke,12,4,1
+2024,South,Second,NC State,Oakland,11,14,0
+2024,South,Second,Colorado,Marquette,10,2,1
+2024,South,Sweet 16,Houston,Duke,1,4,1
+2024,South,Sweet 16,NC State,Marquette,11,2,0
+2024,South,Elite 8,Duke,NC State,4,11,1
+2024,West,First,UNC,Wagner,1,16,0
+2024,West,First,Mississippi State,Michigan State,8,9,1
+2024,West,First,Saint Mary's,Grand Canyon,5,12,1
+2024,West,First,Alabama,College of Charleston,4,13,0
+2024,West,First,Clemson,New Mexico,6,11,0
+2024,West,First,Baylor,Colgate,3,14,0
+2024,West,First,Dayton,Nevada,7,10,0
+2024,West,First,Arizona,Long Beach State,2,15,0
+2024,West,Second,UNC,Michigan State,1,9,0
+2024,West,Second,Grand Canyon,Alabama,12,4,1
+2024,West,Second,Clemson,Baylor,6,3,0
+2024,West,Second,Dayton,Arizona,7,2,1
+2024,West,Sweet 16,UNC,Alabama,1,4,1
+2024,West,Sweet 16,Clemson,Arizona,6,2,0
+2024,West,Elite 8,Alabama,Clemson,4,6,0
+2024,National,Final 4,UConn,Alabama,1,4,0
+2024,National,Final 4,Purdue,NC State,1,11,0
+2024,National,National Championship,UConn,Purdue,1,1,0
+2025,East,First,Duke,Mount St. Mary's,1,16,0
+2025,East,First,Mississippi State,Baylor,8,9,1
+2025,East,First,Oregon,Liberty,5,12,0
+2025,East,First,Arizona,Akron,4,13,0
+2025,East,First,BYU,VCU,6,11,0
+2025,East,First,Wisconsin,Montana,3,14,0
+2025,East,First,Saint Mary's,Vanderbilt,7,10,0
+2025,East,First,Alabama,Robert Morris,2,15,0
+2025,East,Second,Duke,Baylor,1,9,0
+2025,East,Second,Oregon,Arizona,5,4,1
+2025,East,Second,BYU,Wisconsin,6,3,0
+2025,East,Second,Saint Mary's,Alabama,7,2,1
+2025,East,Sweet 16,Duke,Arizona,1,4,0
+2025,East,Sweet 16,BYU,Alabama,6,2,1
+2025,East,Elite 8,Duke,Alabama,1,2,0
+2025,Midwest,First,Houston,SIU-Edwardsville,1,16,0
+2025,Midwest,First,Gonzaga,Georgia,8,9,0
+2025,Midwest,First,Clemson,McNeese State,5,12,1
+2025,Midwest,First,Purdue,High Point,4,13,0
+2025,Midwest,First,Illinois,Xavier,6,11,0
+2025,Midwest,First,Kentucky,Troy,3,14,0
+2025,Midwest,First,UCLA,Utah State,7,10,0
+2025,Midwest,First,Tennessee,Wofford,2,15,0
+2025,Midwest,Second,Houston,Gonzaga,1,8,0
+2025,Midwest,Second,McNeese State,Purdue,12,4,1
+2025,Midwest,Second,Illinois,Kentucky,6,3,1
+2025,Midwest,Second,UCLA,Tennessee,7,2,1
+2025,Midwest,Sweet 16,Houston,Purdue,1,4,0
+2025,Midwest,Sweet 16,Kentucky,Tennessee,3,2,1
+2025,Midwest,Elite 8,Houston,Tennessee,1,2,0
+2025,South,First,Auburn,Alabama State,1,16,0
+2025,South,First,Louisville,Creighton,8,9,1
+2025,South,First,Michigan,UC-San Diego,5,12,0
+2025,South,First,Texas A&M,Yale,4,13,0
+2025,South,First,Ole Miss,UNC,6,11,0
+2025,South,First,Iowa State,Lipscomb,3,14,0
+2025,South,First,Marquette,New Mexico,7,10,1
+2025,South,First,Michigan State,Bryant,2,15,0
+2025,South,Second,Auburn,Creighton,1,9,0
+2025,South,Second,Michigan,Texas A&M,5,4,0
+2025,South,Second,Ole Miss,Iowa State,6,3,0
+2025,South,Second,New Mexico,Michigan State,10,2,1
+2025,South,Sweet 16,Auburn,Michigan,1,5,0
+2025,South,Sweet 16,Ole Miss,Michigan State,6,2,1
+2025,South,Elite 8,Auburn,Michigan State,1,2,0
+2025,West,First,Florida,Norfolk State,1,16,0
+2025,West,First,UConn,Oklahoma,8,9,0
+2025,West,First,Memphis,Colorado State,5,12,1
+2025,West,First,Maryland,Grand Canyon,4,13,0
+2025,West,First,Missouri,Drake,6,11,1
+2025,West,First,Texas Tech,UNC Wilmington,3,14,0
+2025,West,First,Kansas,Arkansas,7,10,1
+2025,West,First,St. John's (NY),Omaha,2,15,0
+2025,West,Second,Florida,UConn,1,8,0
+2025,West,Second,Colorado State,Maryland,12,4,1
+2025,West,Second,Drake,Texas Tech,11,3,1
+2025,West,Second,Arkansas,St. John's (NY),10,2,0
+2025,West,Sweet 16,Florida,Maryland,1,4,0
+2025,West,Sweet 16,Texas Tech,Arkansas,3,10,0
+2025,West,Elite 8,Florida,Texas Tech,1,3,0
+2025,National,Final 4,Auburn,Florida,1,1,1
+2025,National,Final 4,Duke,Houston,1,1,1
+2025,National,National Championship,Florida,Houston,1,1,0
