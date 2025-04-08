@@ -1,16 +1,19 @@
-import requests
+import time
+import random
 import csv
+import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
 from utils import (
-    YEARS, BASIC_TEAM_STATS, ADVANCED_TEAM_STATS, get_season_stats_url
+    YEARS, BASIC_TEAM_STATS, ADVANCED_TEAM_STATS, HEADERS,
+    get_season_stats_url,
 )
 
-matchups = pd.read_csv("data/matchups.csv")
-tournament_teams = set()
 stats_history = []
 
-# Collect a set of all tournament teams by year
+# Collect a set of all tournament teams by year from the list of matchups
+matchups = pd.read_csv("data/matchups.csv")
+tournament_teams = set()
 for i, matchup in matchups.iterrows():
     for team_col in ["team_a", "team_b"]:
         year = matchup["year"]
@@ -21,7 +24,8 @@ def collect_stats(year, basic_stats=True):
     stats = []
 
     stats_url = get_season_stats_url(year, basic_stats)
-    res = requests.get(stats_url)
+    res = requests.get(stats_url, headers=HEADERS)
+    time.sleep(random.uniform(2.0, 5.0)) # Avoid rate limiting
     soup = BeautifulSoup(res.content, "lxml")
 
     table_id = "basic_school_stats" if basic_stats else "adv_school_stats"
