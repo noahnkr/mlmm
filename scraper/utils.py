@@ -4,27 +4,30 @@ YEARS = [ 2023, ]
 
 REGIONS = [ "East", "Midwest", "South", "West", "National" ]
 
-ROUNDS = ["First", "Second", "Sweet 16", "Elite 8", "Final 4", "National Championship"]
+ROUNDS = [ "First", "Second", "Sweet 16", "Elite 8", "Final 4", "National Championship" ]
 
 BASIC_TEAM_STATS = {
-    "2P": "fg2_per_g", 
-    "2PA": "fg2a_per_g", 
-    "3P": "fg3_per_g", 
-    "3PA": "fg3a_per_g", 
-    "FT": "ft_per_g", 
-    "FTA": "fta_per_g", 
-    "ORB": "orb_per_g", 
-    "DRB": "drb_per_g", 
-    "AST": "ast_per_g", 
-    "STL": "stl_per_g", 
-    "BLK": "blk_per_g", 
-    "TOV": "tov_per_g", 
-    "PF": "pf_per_g", 
-    "PTS": "pts_per_g",
+    "GP": "g",
+    "W-L%": "win_loss_pct", 
+    "FG": "fg",
+    "FGA": "fga",
+    "FG%": "fg_pct",
+    "3P": "fg3",
+    "3PA": "fg3a",
+    "3P%": "fg3_pct",
+    "FT": "ft",
+    "FTA": "fta",
+    "FT%": "ft_pct",
+    "ORB": "orb",
+    "TRB": "trb",
+    "AST": "ast",
+    "STL": "stl",
+    "BLK": "blk",
+    "TOV": "tov", 
+    "PF": "pf", 
 }
 
 ADVANCED_TEAM_STATS = {
-   "W-L%": "win_loss_pct", 
    "SRS": "srs",
    "SOS": "sos", 
    "Pace": "pace",
