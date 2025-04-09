@@ -29,7 +29,8 @@ for year in YEARS:
 			matchups = round.find_all("div")
 			for matchup in matchups:
 				teams = matchup.find_all("div")
-				if len(teams) != 2: continue
+				if len(teams) != 2: 
+					continue
 
 				team_a = teams[0].find("a").text.strip()
 				team_b = teams[1].find("a").text.strip()
@@ -37,6 +38,7 @@ for year in YEARS:
 				team_a_seed = int(teams[0].find("span").text.strip())
 				team_b_seed = int(teams[1].find("span").text.strip())
 
+				# 0 if Team A wins, 1 if Team B wins
 				winner = 0 if "winner" in teams[0].get("class", []) else 1
 
 				print_matchup(team_a, team_b, team_a_seed, team_b_seed, winner)
@@ -48,8 +50,7 @@ for year in YEARS:
 					"team_b": team_b,
 					"team_a_seed": team_a_seed,
 					"team_b_seed": team_b_seed,
-					"winner": winner, # 0 if Team A wins, 1 if Team B wins
-				})
+					"winner": winner, 				})
 
 with open("data/matchups.csv", "w", newline="", encoding="utf-8") as f:
 	writer = csv.DictWriter(f, fieldnames=matchup_history[0].keys())

@@ -14,7 +14,7 @@ stats_history = []
 # Collect a set of all tournament teams by year from the list of matchups
 matchups = pd.read_csv("data/matchups.csv")
 tournament_teams = set()
-for i, matchup in matchups.iterrows():
+for _, matchup in matchups.iterrows():
     for team_col in ["team_a", "team_b"]:
         year = matchup["year"]
         team = matchup[team_col]
@@ -34,13 +34,15 @@ def collect_stats(year, basic_stats=True):
     team_rows = table_body.find_all("tr")
 
     for row in team_rows:
-        if "class" in row.attrs and "thead" in row["class"]: continue # Skip sub-headers
+        if "class" in row.attrs and "thead" in row["class"]:
+            continue # Skip sub-headers
 
         team = row.find(
             "td", {"data-stat": "school_name"}
         ).text.replace("NCAA", "").strip() # If team is in tournament, need to remove `NCAA` superscript
 
-        if (year, team) not in tournament_teams: continue # Skip non-tournament teams
+        if (year, team) not in tournament_teams: 
+            continue # Skip non-tournament teams
 
         print(f"--- Scraping {year} {team} {"Basic" if basic_stats else "Advanced"} Stats ---")
 
