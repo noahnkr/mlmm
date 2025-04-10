@@ -49,7 +49,8 @@ for year in YEARS:
 					"team_b": team_b,
 					"team_a_seed": team_a_seed,
 					"team_b_seed": team_b_seed,
-					"winner": winner, 				})
+					"winner": winner,
+				})
 
 with open("data/matchups.csv", "w", newline="", encoding="utf-8") as f:
 	writer = csv.DictWriter(f, fieldnames=matchup_history[0].keys())
