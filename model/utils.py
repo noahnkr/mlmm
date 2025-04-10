@@ -1,9 +1,6 @@
 import pandas as pd
-import numpy as np
-from random import shuffle
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
@@ -16,31 +13,28 @@ MODELS = {
     "Naive Bayes": GaussianNB()
 }
 
-def get_team_vector(year, team, team_stats):
-    row = team_stats[(team_stats["year"] == year) & (team_stats["team"] == team)]
+def get_team_vector(year, team, seed, team_stats):
+    row = team_stats[(team_stats["year"] == year) & (team_stats["team"] == team)].copy()
     if row.empty:
         return None
-    # Remove irrelavent fetures
-    return row.drop(columns=["year", "team"]).values.flatten().astype(float)
+    row["seed"] = seed
+    return row.drop(columns=["year", "team"]).values.flatten() # Remove redundant features, convert to np array
 
 def load_dataset():
-    features, labels = [], []
+    X, y = [], []
 
     matchups = pd.read_csv("data/matchups.csv")
     team_stats = pd.read_csv("data/stats.csv")
 
     for _, row in matchups.iterrows():
-        v_a = get_team_vector(row["year"], row["team_a"], team_stats)
-        v_b = get_team_vector(row["year"], row["team_b"], team_stats)
+        v_a = get_team_vector(row["year"], row["team_a"], row["team_a_seed"], team_stats)
+        v_b = get_team_vector(row["year"], row["team_b"], row["team_b_seed"], team_stats)
 
         if v_a is None or v_b is None:
             continue
         
-        features.append(v_a - v_b)
-        labels.append(row["winner"])
-    
-    X = np.array(features)
-    y = np.array(labels)
+        dv = v_a - v_b # Feature vector is the difference in both team's stats and seeding
+        X.append(dv)
+        y.append(1 if row["winner"] == row["team_a"] else 0)
     
     return X, y
-
