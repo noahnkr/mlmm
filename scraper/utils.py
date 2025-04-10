@@ -60,4 +60,4 @@ def get_season_stats_url(year, basic_stats):
     return f"{BASE_URL}/cbb/seasons/men/{year}-{"" if basic_stats else "advanced-"}school-stats.html"
 
 def print_matchup(team_a, team_b, team_a_seed, team_b_seed, winner):
-   print(f"({team_a_seed}) {UNDERLINE_START if winner == 0 else ""}{team_a}{UNDERLINE_END if winner == 0 else ""} - ({team_b_seed}) {UNDERLINE_START if winner == 1 else ""}{team_b}{UNDERLINE_END if winner == 1 else ""}")
+   print(f"({team_a_seed}) {UNDERLINE_START if winner == team_a else ""}{team_a}{UNDERLINE_END if winner == team_a else ""} - ({team_b_seed}) {UNDERLINE_START if winner == team_b else ""}{team_b}{UNDERLINE_END if winner == team_b else ""}")

@@ -38,8 +38,7 @@ for year in YEARS:
 				team_a_seed = int(teams[0].find("span").text.strip())
 				team_b_seed = int(teams[1].find("span").text.strip())
 
-				# 0 if Team A wins, 1 if Team B wins
-				winner = 0 if "winner" in teams[0].get("class", []) else 1
+				winner = team_a if "winner" in teams[0].get("class", []) else team_b
 
 				print_matchup(team_a, team_b, team_a_seed, team_b_seed, winner)
 				matchup_history.append({
