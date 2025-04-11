@@ -4,7 +4,7 @@ import csv
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
-from utils import (
+from scraper.utils import (
     YEARS, BASIC_TEAM_STATS, ADVANCED_TEAM_STATS, HEADERS,
     get_season_stats_url,
 )
@@ -39,7 +39,7 @@ def collect_stats(year, basic_stats=True):
 
         team = row.find(
             "td", {"data-stat": "school_name"}
-        ).text.replace("NCAA", "").strip() # If team is in tournament, need to remove `NCAA` superscript
+        ).find("a")["href"].split("/")[3]
 
         if (year, team) not in tournament_teams: 
             continue # Skip non-tournament teams

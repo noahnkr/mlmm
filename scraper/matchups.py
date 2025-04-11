@@ -3,7 +3,7 @@ import random
 import csv
 import requests
 from bs4 import BeautifulSoup 
-from utils import (
+from scraper.utils import (
 	YEARS, REGIONS, ROUNDS, HEADERS,
 	get_bracket_url, print_matchup
 )
@@ -32,8 +32,8 @@ for year in YEARS:
 				if len(teams) != 2: 
 					continue
 
-				team_a = teams[0].find("a").text.strip()
-				team_b = teams[1].find("a").text.strip()
+				team_a = teams[0].find("a")["href"].split("/")[3]
+				team_b = teams[1].find("a")["href"].split("/")[3]
 
 				team_a_seed = int(teams[0].find("span").text.strip())
 				team_b_seed = int(teams[1].find("span").text.strip())
