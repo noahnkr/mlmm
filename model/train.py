@@ -13,14 +13,10 @@ X_train, X_test, y_train, y_test, info_train, info_test = train_test_split(
 )
 print(f"Train size: {len(X_train)}, Test size: {len(X_test)}")
 
-scaler = StandardScaler()
-X_train_scl = scaler.fit_transform(X_train)
-X_test_scl = scaler.transform(X_test)
-
 model = LogisticRegression(max_iter=1000)
-model.fit(X_train_scl, y_train)
+model.fit(X_train, y_train)
 
-preds = model.predict(X_test_scl)
+preds = model.predict(X_test)
 #print_correct_upsets(preds, y_test, info_test)
 
 simulate_tournament(2025, model)

@@ -32,11 +32,11 @@ def load_raw_data():
 def load_dataset():
     X, y, info = [], [], []
 
-    matchups, team_stats = load_raw_data()
+    matchups, stats = load_raw_data()
 
     for _, row in matchups.iterrows():
-        v_a = get_team_vector(row["year"], row["team_a"], row["team_a_seed"], team_stats)
-        v_b = get_team_vector(row["year"], row["team_b"], row["team_b_seed"], team_stats)
+        v_a = get_team_vector(row["year"], row["team_a"], row["team_a_seed"], stats)
+        v_b = get_team_vector(row["year"], row["team_b"], row["team_b_seed"], stats)
 
         if v_a is None or v_b is None:
             continue
