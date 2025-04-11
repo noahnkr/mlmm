@@ -21,7 +21,7 @@ def get_team_vector(year, team, seed, team_stats):
     return row.drop(columns=["year", "team"]).values.flatten() # Remove redundant features, convert to np array
 
 def load_dataset():
-    X, y = [], []
+    X, y, info = [], [], []
 
     matchups = pd.read_csv("data/matchups.csv")
     team_stats = pd.read_csv("data/stats.csv")
@@ -36,5 +36,15 @@ def load_dataset():
         dv = v_a - v_b # Feature vector is the difference in both team's stats and seeding
         X.append(dv)
         y.append(1 if row["winner"] == row["team_a"] else 0)
+        info.append({
+            "year": row["year"],
+            "round": row["round"],
+            "region": row["region"],
+            "team_a": row["team_a"],
+            "team_a_seed": row["team_a_seed"],
+            "team_b": row["team_b"],
+            "team_b_seed": row["team_b_seed"],
+            "winner": row["winner"]
+        })
     
-    return X, y
+    return X, y, info
