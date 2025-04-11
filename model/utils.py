@@ -5,6 +5,10 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 
+MATCHUPS_PATH = "./data/matchups.csv"
+
+STATS_PATH = "./data/stats.csv"
+
 MODELS = {
     "Logistic Regression": LogisticRegression(max_iter=1000),
     "SVM": SVC(kernel="linear"),
@@ -20,11 +24,15 @@ def get_team_vector(year, team, seed, team_stats):
     row["seed"] = seed
     return row.drop(columns=["year", "team"]).values.flatten() # Remove redundant features, convert to np array
 
+def load_raw_data():
+    matchups = pd.read_csv(MATCHUPS_PATH)
+    team_stats = pd.read_csv(STATS_PATH)
+    return matchups, team_stats
+
 def load_dataset():
     X, y, info = [], [], []
 
-    matchups = pd.read_csv("data/matchups.csv")
-    team_stats = pd.read_csv("data/stats.csv")
+    matchups, team_stats = load_raw_data()
 
     for _, row in matchups.iterrows():
         v_a = get_team_vector(row["year"], row["team_a"], row["team_a_seed"], team_stats)
