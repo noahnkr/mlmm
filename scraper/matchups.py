@@ -52,6 +52,8 @@ for year in YEARS:
 					"winner": winner,
 				})
 
+print("--- Success! ---")
+
 with open("data/matchups.csv", "w", newline="", encoding="utf-8") as f:
 	writer = csv.DictWriter(f, fieldnames=matchup_history[0].keys())
 	writer.writeheader()

@@ -3,84 +3,93 @@ import random
 import csv
 import requests
 import pandas as pd
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 from scraper.utils import (
-    YEARS, BASIC_TEAM_STATS, ADVANCED_TEAM_STATS, HEADERS,
-    get_season_stats_url,
+    NUMERIC_STATS, PERCENT_STATS, STATS_OUTPUT_PATH,
+    collect_tournament_teams, get_season_stats_url,
 )
 
-stats_history = []
+def parse_game(game_row):
+    game_type = game_row.find("td", {"data-stat": "game_type"}).text.strip()
+    if "REG" not in game_type and "CTOURN" not in game_type:
+        return None
 
-# Collect a set of all tournament teams by year from the list of matchups
-matchups = pd.read_csv("data/matchups.csv")
-tournament_teams = set()
-for _, matchup in matchups.iterrows():
-    for team_col in ["team_a", "team_b"]:
-        year = matchup["year"]
-        team = matchup[team_col]
-        tournament_teams.add((year, team))
+    game_stats = {}
+    for stat_name, stat_id in NUMERIC_STATS.items():
+        try:
+            game_stats[stat_name] = int(game_row.find("td", {"data-stat": stat_id}).text.strip())
+            game_stats[f"OPP_{stat_name}"] = int(game_row.find("td", {"data-stat": f"opp_{stat_id}"}).text.strip())
+        except ValueError:
+            continue
 
-def collect_stats(year, basic_stats=True):
-    stats = []
+    for stat_name, stat_id in PERCENT_STATS.items():
+        try:
+            game_stats[stat_name] = float(game_row.find("td", {"data-stat": stat_id}).text.strip())
+            game_stats[f"OPP_{stat_name}"] = float(game_row.find("td", {"data-stat": f"opp_{stat_id}"}).text.strip())
+        except ValueError:
+            continue
 
-    stats_url = get_season_stats_url(year, basic_stats)
-    res = requests.get(stats_url, headers=HEADERS)
-    time.sleep(random.uniform(2.0, 5.0)) # Avoid rate limiting
+    return game_stats
+
+def normalize_game_stats(team_stats, games):
+    if len(games) == 0:
+        return None
+
+    df = pd.DataFrame(games)
+
+    for stat in NUMERIC_STATS:
+        team_stats[stat] = round(df[stat].sum() / len(games), 2)
+        team_stats[f"OPP_{stat}"] = round(df[f"OPP_{stat}"].sum() / len(games), 2)
+
+    for stat in PERCENT_STATS:
+        team_stats[stat] = round(df[stat].mean(), 2)
+        team_stats[f"OPP_{stat}"] = round(df[f"OPP_{stat}"].mean(), 2)
+
+def collect_team_stats(year, team, stats_url,):
+    team_stats = { "year": year, "team": team }
+    res = requests.get(stats_url)
+    time.sleep(random.uniform(3.0, 4.0))
     soup = BeautifulSoup(res.content, "lxml")
 
-    table_id = "basic_school_stats" if basic_stats else "adv_school_stats"
-    stats_table = soup.find("table", {"id": table_id})
-    table_body = stats_table.find("tbody")
-    team_rows = table_body.find_all("tr")
+    # Grab SRS & SOS from team summary box
+    info_stats = soup.select("div[data-template='Partials/Teams/Summary'] p")
+    for info in info_stats:
+        if "SRS" in info.text:
+            team_stats["SRS"] = float(info.text.strip().split()[1])
+        elif "SOS" in info.text:
+            team_stats["SOS"] = float(info.text.strip().split()[1])
 
-    for row in team_rows:
+    stats_table = soup.find("table", {"class": "stats_table"})
+    game_rows = stats_table.find("tbody").find_all("tr")
+
+	# Aggregate non-tournament game stats
+    game_history = []
+    for row in game_rows:
         if "class" in row.attrs and "thead" in row["class"]:
-            continue # Skip sub-headers
+            continue
+        parsed = parse_game(row)
+        if parsed:
+            game_history.append(parsed)
 
-        team = row.find(
-            "td", {"data-stat": "school_name"}
-        ).find("a")["href"].split("/")[3]
+	# Normalize numeric stats (FG, ORB, ...) and take average of percent stats (FG%, FT%, ...)
+    normalize_game_stats(team_stats, game_history)
 
-        if (year, team) not in tournament_teams: 
-            continue # Skip non-tournament teams
+    return team_stats
 
-        print(f"--- Scraping {year} {team} {"Basic" if basic_stats else "Advanced"} Stats ---")
+matchups = pd.read_csv("data/matchups.csv")
+tournament_teams = collect_tournament_teams(matchups)
+stats_history = []
 
-        team_stats = { "year": year, "team": team }
-        stat_items = BASIC_TEAM_STATS.items() if basic_stats else ADVANCED_TEAM_STATS.items()
-        for stat_name, stat_id in stat_items:
-            stat = float(
-                row.find("td", {"data-stat": stat_id}).text.strip()
-            )
-            team_stats[stat_name] = stat
-        
-        print(team_stats)
-        stats.append(team_stats)
-    
-    return stats
-    
-for year in YEARS:
-    # Collect Basic & Advanced stats
-    basic_stats = collect_stats(year, True)
-    adv_stats = collect_stats(year, False)
-    
-    # Create lookup dict by (year, team)
-    basic_lookup = {
-        (entry["year"], entry["team"]): entry for entry in basic_stats
-    }
-    adv_lookup = {
-        (entry["year"], entry["team"]): entry for entry in adv_stats
-    }
+for year, team in tournament_teams:
+	print(f"--- Scraping {year} {team} Stats ---")
+	stats_url = get_season_stats_url(year, team)
+	team_stats = collect_team_stats(year, team, stats_url)
+	stats_history.append(team_stats)
 
-    # Combine Basic & Advanced Stats into single dict
-    keys = set(basic_lookup.keys()) & set(adv_lookup.keys())
-    for k in keys:
-        combined_stats = {}
-        combined_stats.update(basic_lookup[k])
-        combined_stats.update(adv_lookup[k])
-        stats_history.append(combined_stats)
+print("--- Success! ---")
 
-with open("data/stats.csv", "w", newline="", encoding="utf-8") as f:
-    writer = csv.DictWriter(f, fieldnames=stats_history[0].keys())
-    writer.writeheader()
-    writer.writerows(stats_history)
+with open(STATS_OUTPUT_PATH, "w", newline="", encoding="utf-8") as f:
+	writer = csv.DictWriter(f, fieldnames=stats_history[0].keys())
+	writer.writeheader()
+	for row in stats_history:
+		writer.writerow(row)
