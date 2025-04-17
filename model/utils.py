@@ -5,8 +5,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 
-TOURNAMENT_YEAR = 2023
-
 MATCHUPS_PATH = "./data/matchups.csv"
 
 STATS_PATH = "./data/stats.csv"

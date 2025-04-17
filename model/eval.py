@@ -37,6 +37,25 @@ def print_correct_upsets(preds, y_test, info_test):
 			print(f"{info["team_a"]} ({info["team_a_seed"]}) vs {info["team_b"]} ({info["team_b_seed"]})")
 			print(f"Predicted: {predicted_winner} | Correct: {info["winner"]}")
 			print("---")
+		
+def evaluate_models(X_train, X_test, y_train, y_test):
+	scaler = StandardScaler()
+	X_train_scl = scaler.fit_transform(X_train)
+	X_test_scl = scaler.transform(X_test)
+
+	model_acc = {}
+	for name, model in MODELS.items():
+		if name in ["Logistic Regression", "SVM", "KNN"]:
+			model.fit(X_train_scl, y_train)
+			preds = model.predict(X_test_scl)
+		else:
+			model.fit(X_train, y_train)
+			preds = model.predict(X_test)
+
+		acc = round(accuracy_score(y_test, preds), 3)
+		model_acc[name] = acc
+	
+	return model_acc
 
 def simulate_tournament(year, model):
 	matchups, stats = load_tournament_data()
@@ -44,7 +63,6 @@ def simulate_tournament(year, model):
 	# Collect and sort all first round games by year
 	matchups = matchups[(matchups["year"] == year) & (matchups["round"] == "First")].drop("winner", axis=1) 
 	matchups = pd.DataFrame(_order_matchups(matchups))
-	print(matchups)
 
 	advancing_teams = []
 	print(f"--- Simulating {year} NCAA March Madness Tournament ---")
