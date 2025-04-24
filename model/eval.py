@@ -3,6 +3,10 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.preprocessing import StandardScaler
 from model.utils import MODELS,SEED_ORDER, load_tournament_data, get_team_vector
 from scraper.utils import REGIONS, ROUNDS, print_matchup
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import roc_auc_score, roc_curve
+
 
 def print_classification_report(X_train, X_test, y_train, y_test):
 	scaler = StandardScaler()
@@ -142,4 +146,35 @@ def _order_matchups(matchups):
 
 	return ordered_matchups
 
+def plot_metrics(model, X_test, y_test):
+    if not hasattr(model, "predict_proba"):
+        print("Model does not support probability predictions.")
+        return
+
+    # Predict probabilities and class labels
+    y_prob = model.predict_proba(X_test)[:, 1]
+    y_pred = model.predict(X_test)
+
+    print("\nClassification Report:")
+    print(classification_report(y_test, y_pred))
+
+    print("Confusion Matrix:")
+    cm = confusion_matrix(y_test, y_pred)
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues")
+    plt.title("Confusion Matrix")
+    plt.xlabel("Predicted")
+    plt.ylabel("Actual")
+    plt.show()
+
+    # ROC Curve
+    fpr, tpr, _ = roc_curve(y_test, y_prob)
+    roc_auc = roc_auc_score(y_test, y_prob)
+    plt.plot(fpr, tpr, label=f"AUC = {roc_auc:.2f}")
+    plt.plot([0, 1], [0, 1], "k--")
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.title("ROC Curve")
+    plt.legend()
+    plt.grid()
+    plt.show()
 

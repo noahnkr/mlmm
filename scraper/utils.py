@@ -1,3 +1,4 @@
+import numpy as np
 BASE_URL = "https://www.sports-reference.com"
 
 YEARS = [ 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025 ]
@@ -70,3 +71,19 @@ def get_season_stats_url(year, team):
 
 def print_matchup(team_a, team_b, team_a_seed, team_b_seed, winner):
    print(f"({team_a_seed}) {UNDERLINE_START if winner == team_a else ""}{team_a}{UNDERLINE_END if winner == team_a else ""} vs. ({team_b_seed}) {UNDERLINE_START if winner == team_b else ""}{team_b}{UNDERLINE_END if winner == team_b else ""}")
+   
+def compute_stat_deltas(df):
+    df["off_rating_diff"] = df["team_a_off_rating"] - df["team_b_def_rating"]
+    df["def_rating_diff"] = df["team_a_def_rating"] - df["team_b_off_rating"]
+    df["to_pct_diff"] = df["team_a_to_pct"] - df["team_b_to_pct"]
+    df["ts_pct_diff"] = df["team_a_ts_pct"] - df["team_b_ts_pct"]
+    return df
+
+def print_model_accuracies(model_acc):
+    print("\\nModel Performance Summary:")
+    for name, acc in model_acc.items():
+        print(f"{name:20s} Accuracy: {acc:.3f}")
+
+def compute_seed_diff(df):
+    df["seed_diff"] = df["team_a_seed"] - df["team_b_seed"]
+    return df
