@@ -19,7 +19,6 @@ if "-t" in sys.argv:
     model.fit(X_train, y_train)
 
     simulate_tournament(tournament_year, model)
-    print_classification_report(X_train, X_test, y_train, y_test)
 
     preds = model.predict(X_test)
     print_correct_upsets(preds, y_test, info_test)
