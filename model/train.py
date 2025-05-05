@@ -17,6 +17,10 @@ if "-t" in sys.argv:
     model.fit(X_train, y_train)
 
     simulate_tournament(tournament_year, model)
+    print_classification_report(X_train, X_test, y_train, y_test)
+
+    preds = model.predict(X_test)
+    print_correct_upsets(preds, y_test, info_test)
 
 elif "-a" in sys.argv:
 
@@ -29,4 +33,9 @@ elif "-a" in sys.argv:
         total_accuracy.append(model_acc)
     
     df = pd.DataFrame(total_accuracy)
+    print("Model Accuracy by Year")
+    print(df)
+    print("Average Accuracy by Model Across All Years:")
+    print(df.mean().round(3))
+    
 
