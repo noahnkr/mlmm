@@ -6,6 +6,7 @@ from model.eval import (
     print_classification_report, print_correct_upsets, 
 )
 from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
 from scraper.utils import YEARS
 
 if "-t" in sys.argv:
@@ -13,7 +14,8 @@ if "-t" in sys.argv:
     train_years = [y for y in YEARS if y != tournament_year]
     X_train, y_train, X_test, y_test, info_test = load_dataset(train_years=train_years, test_year=tournament_year)
 
-    model = LogisticRegression(max_iter=1000, class_weight="balanced")
+    #model = LogisticRegression(max_iter=1000, class_weight="balanced")
+    model = RandomForestClassifier(n_estimators=100)
     model.fit(X_train, y_train)
 
     simulate_tournament(tournament_year, model)
